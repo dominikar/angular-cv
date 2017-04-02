@@ -1,0 +1,42 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #eeeeee;
+}
+
+.row {
+    background-color: #ffffff;
+
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 15px;
+}
+
+div.container {
+    width: 1000px;
+    margin-top: 40px;
+}
+div.data {margin-top: 20px;}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+/*div .container .jumbotron, .container-fluid .jumbotron {*/
+    /*padding-right: 15px;*/
+    /*padding-left: 15px;*/
+    /*border-radius: 6px;*/
+/*}*/
+/*div .marketing {*/
+    /*margin: 40px 0;*/
+/*}*/
+/**/
+/*jumbotron-narrow.css:9*/
+/*.header, .marketing, .footer {*/
+    /*padding-right: 15px;*/
+    /*padding-left: 15px;*/
+/*}*/

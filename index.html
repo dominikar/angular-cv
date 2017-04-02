@@ -1,0 +1,86 @@
+<!doctype html>
+<html ng-app="AngularCV">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="script.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!--https://app.honeypot.io/profile-->
+</head>
+<body>
+<div class="container" ng-controller="AngularCvController">
+
+    <div class="row">
+        <div class="col-md-2"><img src="cvzdjecie.jpg" class="image"></div>
+        <div class="col-md-10"><h1> {{cv.firstName}} {{cv.lastName}} </h1>
+            email:{{cv.email}} github:{{cv.githubLogin}}
+
+        </div>
+    </div>
+    <div class="row data">
+        <div class="col-md-12">
+            <h2>Skils</h2>
+            <ul>
+                <li ng-repeat="skill in cv.skills">{{skill}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row data">
+        <div class="col-md-12">
+            <h2>Education</h2>
+            <div ng-repeat="education in cv.education">
+                University: {{education.university}}
+                Field: {{education.field}}
+                 {{education.from}} - {{education.to}}
+            </div>
+        </div>
+    </div>
+
+    <div class="row data">
+        <div class="col-md-12">
+            <h2>Volunteering</h2>
+            <div ng-repeat="volunteering in cv.volunteering">
+                {{volunteering.name}}
+               {{volunteering.description}}
+            </div>
+        </div>
+    </div>
+
+    <div class="row data">
+        <div class="col-md-12">
+            <h2>Languages</h2>
+            <p ng-repeat="language in cv.languages">
+                {{language.name}} - {{language.level}}
+            </p>
+        </div>
+    </div>
+
+    <div class="row data">
+        <div class="col-md-12">
+            <h2>Interests</h2>
+            <div ng-repeat="interest in cv.interests">
+                {{interest}}
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="col-md-9 row">-->
+    <!--<div ng-controller="AngularCvController">-->
+    <!--<div class="col-lg-6"><h2>Education</h2>-->
+    <!--< ng-repeat="edu in cv.education">{{edu}}</>-->
+    <!--</div>-->
+    <!--<div class="col-lg-6">-->
+    <!--<div class="marketing">-->
+    <!--<h2>Skills</h2>-->
+    <!--<li ng-repeat="skill in cv.skills">{{skill}}</li>-->
+    <!--<h2>Interests</h2>-->
+    <!--<li ng-repeat="inte in cv.interests">{{inte}}</li>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--</div>-->
+    <!--</div>-->
+</div>
+</body>
+</html>
+

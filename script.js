@@ -6,6 +6,7 @@ angular.module('AngularCV', [])
             "email": "dominikarusinska@gmail.com",
             "img": "img/dominikar.jpg",
             "githubLogin": "dominikar",
+            "freeCodeCampLogin": "dominikar",
             "skills": [
                 "Adobe Photoshop",
                 "Adobe Illustrator",
@@ -27,22 +28,23 @@ angular.module('AngularCV', [])
                 {
                     "name": "DKMS",
                     "description": "Registering potential blood stem cell donors",
-                    "year": "2015"
+                    "year": "2014"
                 }
             ],
             "languages": [
                 {
                     "name": "Polish",
-                    "level": "native"
+                    "level": "Native"
                 },
                 {
                     "name": "English",
-                    "level": "intermediate"
+                    "level": "Intermediate"
                 }
             ],
             "interests": [
-                "fashion design",
-                "itd"
+                "Graphic design",
+                "Concept art",
+                "Art history"
             ]
         };
     });

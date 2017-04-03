@@ -6,22 +6,26 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>CV</title>
 </head>
 <body>
 <div class="container" ng-controller="AngularCvController">
 
     <div class="row">
         <div class="col-md-3"><img src="{{cv.img}}" class="image"></div>
-        <div class="col-md-9"><h1> {{cv.firstName}} {{cv.lastName}} </h1>
-            <p> email:{{cv.email}}</p>
+        <div class="col-md-9">
+            <h1> {{cv.firstName}} {{cv.lastName}} </h1>
+            <p><img src="img/mail.png" class="gicon"> email: <a href="mailto:{{cv.email}}">{{cv.email}}</a></p>
             <p><img src="img/ikonag.png" class="gicon"> github: <a href="https://github.com/{{cv.githubLogin}}">{{cv.githubLogin}}</a></p>
-
+            <p><img src="img/freecodecamp.svg" class="gicon"> freecodecamp: <a
+                    href="https://www.freecodecamp.com/{{cv.freeCodeCampLogin}}">{{cv.freeCodeCampLogin}}</a>
+            </p>
         </div>
     </div>
     <div class="row data">
         <div class="col-md-12">
-            <h2>Skils</h2>
-                <span class="label-tag"  ng-repeat="skill in cv.skills">{{skill}}</span>
+            <h2>Skills</h2>
+            <span class="label-tag" ng-repeat="skill in cv.skills">{{skill}}</span>
         </div>
     </div>
     <div class="row data">
@@ -31,7 +35,6 @@
                 <h4>{{education.university}}</h4>
                 <p>{{education.from}} - {{education.to}}</p>
                 <p>Field: {{education.field}}</p>
-
             </div>
         </div>
     </div>
@@ -41,6 +44,7 @@
             <h2>Volunteering</h2>
             <div ng-repeat="volunteering in cv.volunteering">
                 <h4>{{volunteering.name}}</h4>
+                <p>{{volunteering.year}}</p>
                 <p>{{volunteering.description}}</p>
             </div>
         </div>
@@ -56,27 +60,11 @@
         <div class="col-md-6">
             <h2>Interests</h2>
             <div ng-repeat="interest in cv.interests">
-                {{interest}}
+                <p>{{interest}}</p>
             </div>
         </div>
     </div>
 
-    <!--<div class="col-md-9 row">-->
-    <!--<div ng-controller="AngularCvController">-->
-    <!--<div class="col-lg-6"><h2>Education</h2>-->
-    <!--< ng-repeat="edu in cv.education">{{edu}}</>-->
-    <!--</div>-->
-    <!--<div class="col-lg-6">-->
-    <!--<div class="marketing">-->
-    <!--<h2>Skills</h2>-->
-    <!--<li ng-repeat="skill in cv.skills">{{skill}}</li>-->
-    <!--<h2>Interests</h2>-->
-    <!--<li ng-repeat="inte in cv.interests">{{inte}}</li>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-    <!--</div>-->
-    <!--</div>-->
 </div>
 </body>
 </html>

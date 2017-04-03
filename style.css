@@ -1,5 +1,4 @@
 body {
-    /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
@@ -9,7 +8,6 @@ body {
 
 .row {
     background-color: #ffffff;
-
     border: 1px solid #ddd;
     border-radius: 3px;
     padding: 15px;
@@ -18,9 +16,12 @@ body {
 div.container {
     width: 700px;
     margin-top: 40px;
-
+    margin-bottom: 40px;
 }
-div.data {margin-top: 20px;}
+
+div.data {
+    margin-top: 20px;
+}
 
 img.image {
     border: 1px solid #ddd;
@@ -28,9 +29,13 @@ img.image {
     padding: 5px;
     width: 150px;
 }
-img.gicon {width: 20px; }
 
-.container-fluid {  }
+img.gicon {
+    width: 20px;
+}
+
+.container-fluid {
+}
 
 .label-tag {
     border: 1px solid #ddd;

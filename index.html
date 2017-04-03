@@ -5,33 +5,33 @@
     <script src="script.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <!--https://app.honeypot.io/profile-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 <div class="container" ng-controller="AngularCvController">
 
     <div class="row">
-        <div class="col-md-2"><img src="cvzdjecie.jpg" class="image"></div>
-        <div class="col-md-10"><h1> {{cv.firstName}} {{cv.lastName}} </h1>
-            email:{{cv.email}} github:{{cv.githubLogin}}
+        <div class="col-md-3"><img src="{{cv.img}}" class="image"></div>
+        <div class="col-md-9"><h1> {{cv.firstName}} {{cv.lastName}} </h1>
+            <p> email:{{cv.email}}</p>
+            <p><img src="img/ikonag.png" class="gicon"> github: <a href="https://github.com/{{cv.githubLogin}}">{{cv.githubLogin}}</a></p>
 
         </div>
     </div>
     <div class="row data">
         <div class="col-md-12">
             <h2>Skils</h2>
-            <ul>
-                <li ng-repeat="skill in cv.skills">{{skill}}</li>
-            </ul>
+                <span class="label-tag"  ng-repeat="skill in cv.skills">{{skill}}</span>
         </div>
     </div>
     <div class="row data">
         <div class="col-md-12">
             <h2>Education</h2>
             <div ng-repeat="education in cv.education">
-                University: {{education.university}}
-                Field: {{education.field}}
-                 {{education.from}} - {{education.to}}
+                <h4>{{education.university}}</h4>
+                <p>{{education.from}} - {{education.to}}</p>
+                <p>Field: {{education.field}}</p>
+
             </div>
         </div>
     </div>
@@ -40,23 +40,20 @@
         <div class="col-md-12">
             <h2>Volunteering</h2>
             <div ng-repeat="volunteering in cv.volunteering">
-                {{volunteering.name}}
-               {{volunteering.description}}
+                <h4>{{volunteering.name}}</h4>
+                <p>{{volunteering.description}}</p>
             </div>
         </div>
     </div>
 
-    <div class="row data">
-        <div class="col-md-12">
+    <div class="container-fluid data row">
+        <div class="col-md-6">
             <h2>Languages</h2>
             <p ng-repeat="language in cv.languages">
                 {{language.name}} - {{language.level}}
             </p>
         </div>
-    </div>
-
-    <div class="row data">
-        <div class="col-md-12">
+        <div class="col-md-6">
             <h2>Interests</h2>
             <div ng-repeat="interest in cv.interests">
                 {{interest}}

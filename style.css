@@ -1,5 +1,6 @@
 body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
@@ -10,33 +11,35 @@ body {
     background-color: #ffffff;
 
     border: 1px solid #ddd;
-    border-radius: 7px;
+    border-radius: 3px;
     padding: 15px;
 }
 
 div.container {
-    width: 1000px;
+    width: 700px;
     margin-top: 40px;
+
 }
 div.data {margin-top: 20px;}
 
-img {
+img.image {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     width: 150px;
 }
-/*div .container .jumbotron, .container-fluid .jumbotron {*/
-    /*padding-right: 15px;*/
-    /*padding-left: 15px;*/
-    /*border-radius: 6px;*/
-/*}*/
-/*div .marketing {*/
-    /*margin: 40px 0;*/
-/*}*/
-/**/
-/*jumbotron-narrow.css:9*/
-/*.header, .marketing, .footer {*/
-    /*padding-right: 15px;*/
-    /*padding-left: 15px;*/
-/*}*/
+img.gicon {width: 20px; }
+
+.container-fluid {  }
+
+.label-tag {
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    color: #7b7d7a;
+    display: inline-block;
+    height: 30px;
+    line-height: 28px;
+    white-space: nowrap;
+    margin: 4px 4px 4px 0;
+    padding: 0 10px;
+}

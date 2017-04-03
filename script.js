@@ -4,6 +4,7 @@ angular.module('AngularCV', [])
             "firstName": "Dominika",
             "lastName": "Rusinska",
             "email": "dominikarusinska@gmail.com",
+            "img": "img/dominikar.jpg",
             "githubLogin": "dominikar",
             "skills": [
                 "Adobe Photoshop",
@@ -16,7 +17,7 @@ angular.module('AngularCV', [])
             ],
             "education": [
                 {
-                    "university": "PJATK",
+                    "university": "Polish-Japanese Academy of Information Technology",
                     "field": "New Media Arts (Graphic Design)",
                     "from": "2015",
                     "to": "2018"
@@ -25,7 +26,8 @@ angular.module('AngularCV', [])
             "volunteering": [
                 {
                     "name": "DKMS",
-                    "description": "Registering potential blood stem cell donors"
+                    "description": "Registering potential blood stem cell donors",
+                    "year": "2015"
                 }
             ],
             "languages": [
